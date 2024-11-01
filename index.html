@@ -17,9 +17,18 @@
             justify-content: center;
             height: 100vh;
             margin: 0;
-            padding: 0 20px;
+            padding: 0;
             background: linear-gradient(to bottom, #001020, #0e1a2b) fixed;
             overflow: hidden;
+        }
+
+        /* Container para organizar o conteúdo */
+        .container {
+            max-width: 800px;
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
         }
 
         /* Efeito de estrelas no fundo */
@@ -72,21 +81,39 @@
             width: 200px;
             height: auto;
         }
+
+        /* Rodapé */
+        footer {
+            margin-top: 30px;
+            font-size: 0.8em;
+            color: #ccc;
+        }
     </style>
 </head>
 <body>
-    <h1>Star Grow</h1>
-    <p>Bem-vindo ao Star Grow, o jogo onde você pode gerenciar o universo, criar planetas e expandir sua estrela!</p>
-    
-    <div class="links">
-        <p><a href="https://nascorpent.github.io/politica_privacidade.html" target="_blank">Política de Privacidade</a></p>
-        <p><a href="https://nascorpent.github.io/termos_de_uso.html" target="_blank">Termos de Uso</a></p>
+    <div class="container">
+        <h1>Star Grow</h1>
+        <img src="https://nascorpent.github.io/EstrelaBanner.webp" alt="Imagem do Jogo" style="width: 100%; height: auto; border-radius: 10px;">
+        <p>Bem-vindo ao Star Grow, o jogo onde você pode gerenciar o universo, criar planetas e expandir sua estrela!</p>
+        <p>Embarque em uma jornada cósmica e transforme uma pequena estrela em um sistema planetário vibrante! 
+        Em Star Grow você será o mestre de sua própria estrela, controlando sua expansão, criação de asteroides e planetas que orbitam ao seu redor. Quanto mais energia você gerar, maiores serão suas criações e mais complexos seus desafios.
+        Veja os planetas e asteroides se formarem e serem destruídos enquanto sua estrela evolui cada vez mais.</p>
+
+        <div class="links">
+            <p><a href="https://nascorpent.github.io/politica_privacidade.html">Política de Privacidade</a></p>
+            <p><a href="https://nascorpent.github.io/termos_de_uso.html">Termos de Uso</a></p>
+        </div>
+        
+        <div class="download-button">
+            <a href="https://play.google.com/store/apps/details?id=com.nascorpent.stargrowgame&hl=pt_BR">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Disponível no Google Play" class="google-play">
+            </a>
+        </div>
     </div>
-    
-    <div class="download-button">
-        <a href="https://play.google.com/store/apps/details?id=com.nascorpent.stargrowgame&hl=pt_BR" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Disponível no Google Play" class="google-play">
-        </a>
-    </div>
+
+    <footer>
+        &copy; 2024 Nascorp Entertainment. Todos os direitos reservados. <br>
+        Contato: <a href="mailto:nascorpentertainment@gmail.com">nascorpentertainment@gmail.com</a>
+    </footer>
 </body>
 </html>
