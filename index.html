@@ -6,9 +6,9 @@
     <meta name="description" content="Página oficial do jogo Star Grow, onde você pode gerenciar o universo e expandir sua estrela.">
     <title>Star Grow - Jogo Oficial</title>
     <style>
+        /* Estilos globais */
         body {
             font-family: Arial, sans-serif;
-            background-color: #0e1a2b;
             color: #ffffff;
             display: flex;
             flex-direction: column;
@@ -17,7 +17,29 @@
             height: 100vh;
             margin: 0;
             padding: 0 20px;
+            background: linear-gradient(to bottom, #001020, #0e1a2b) fixed;
+            overflow: hidden;
         }
+
+        /* Efeito de estrelas no fundo */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(2px 2px at 30% 30%, #ffffff, transparent) 0 0,
+                        radial-gradient(1.5px 1.5px at 70% 40%, #ffffff, transparent) 0 0,
+                        radial-gradient(1px 1px at 40% 80%, #ffffff, transparent) 0 0,
+                        radial-gradient(1.7px 1.7px at 60% 20%, #ffffff, transparent) 0 0,
+                        radial-gradient(1px 1px at 85% 75%, #ffffff, transparent) 0 0;
+            background-size: 100px 100px;
+            opacity: 0.8;
+            z-index: -1;
+        }
+
+        /* Títulos e textos */
         h1 {
             font-size: 2em;
             margin-bottom: 0.5em;
@@ -27,6 +49,8 @@
             line-height: 1.5em;
             text-align: center;
         }
+
+        /* Links de política e termos */
         .links {
             margin-top: 20px;
         }
@@ -38,6 +62,8 @@
         a:hover {
             color: #68c3ff;
         }
+
+        /* Botão de download do Google Play */
         .download-button {
             margin-top: 30px;
         }
