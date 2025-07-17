@@ -2,6 +2,7 @@ OWNERDOMAIN=nascorpent.github.io
 ironsrc.com, 558b8c80, DIRECT
 unityads.unity3d.com, 5738894, DIRECT
 unityads.unity3d.com, 5897050, DIRECT
+facebook.com, 2276048409890614, DIRECT, c3e20eee3f780d68
 
 rubiconproject.com, 24400, RESELLER, 0bfd66d529a55807
 video.unrulymedia.com, 2464975885, RESELLER
